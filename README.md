@@ -36,14 +36,14 @@ you must add the following to your WORKSPACE file:
 
 ```python
 
-bazel_integation_testing_version="404010b3763262526d3a0e09073d8a8f22ed3d4b"
+bazel_integration_testing_version="404010b3763262526d3a0e09073d8a8f22ed3d4b"
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 http_archive(
-             name = "io_bazel_bazel_integation_testing",
-             url = "https://github.com/bazelbuild/bazel-integation-testing/archive/%s.zip"%bazel_integation_testing_version,
+             name = "io_bazel_bazel_integration_testing",
+             url = "https://github.com/bazelbuild/bazel-integration-testing/archive/%s.zip"%bazel_integration_testing_version,
              type = "zip",
-             strip_prefix= "bazel-integation-testing-%s" % bazel_integation_testing_version,
+             strip_prefix= "bazel-integration-testing-%s" % bazel_integrFix   ation_testing_version,
              sha256 = "9561123fbef215f949e086067069f9dc6fa2cff31a7896c8cf16757cddd78b1f",
              )
 
